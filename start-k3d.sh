@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 name=my-cluster
-nodes=3
+nodes=2
 registry_name=k3d-my-registry
 max="$(($nodes-1))"
 
