@@ -1,0 +1,10 @@
+resources:
+  - ingress.yaml
+  - https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+patchesStrategicMerge:
+  - argocd-cmd-params-cm.yaml 
+#   - argo-server.yaml 
+# configMapGenerator:
+# - name: example-configmap-2
+#   literals:
+#   - FOO=Bar
